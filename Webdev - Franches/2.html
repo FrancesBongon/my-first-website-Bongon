@@ -95,3 +95,12 @@ document.getElementById("loginForm").addEventListener("submit",function(event) {
         pwd.attr("type", pwd.attr("type") === "password" ? "text" : "password");
 });
 </script>
+
+<textarea id="bio" maxlength="100"></textarea>
+<p id="count">0/100</p>
+
+<script>
+    $("#bio").on("input", function(){
+        $("#count").text($(this).val().length + "/100");
+});
+</script>
