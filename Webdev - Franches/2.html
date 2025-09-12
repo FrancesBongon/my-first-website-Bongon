@@ -121,3 +121,24 @@ document.getElementById("loginForm").addEventListener("submit",function(event) {
         }
 });
 </script>
+
+<style>
+    .error {border: 2px solid red; }
+</style>
+
+<form id="formCheck">
+    <input type="text" id="name" placeholder="Name">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    $("#formCheck").submit(function(e){
+        e.preventDefault();
+        if $("#name").val() === ""){
+        $("#name").addClass("error");
+    } else {
+        $("#name").removeClass("error");
+        alert("Form submitted!");
+        }
+    });
+</script>
