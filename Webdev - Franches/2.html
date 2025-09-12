@@ -85,3 +85,13 @@ document.getElementById("loginForm").addEventListener("submit",function(event) {
         alert("Form submitted with jQuery!);
 });
 </script>
+
+<input type="password" id="pwd">
+<button id="toggle">Show/Hide</button>
+
+<script>
+    $("#toggle").click(function() {
+        let pwd = $("#pwd);
+        pwd.attr("type", pwd.attr("type") === "password" ? "text" : "password");
+});
+</script>
