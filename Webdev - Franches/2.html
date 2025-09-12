@@ -82,7 +82,7 @@ document.getElementById("loginForm").addEventListener("submit",function(event) {
 <script>
     $("#myForm").submit(function(event) {
         event.preventDefault();
-        alert("Form submitted with jQuery!);
+        alert("Form submitted with jQuery!");
 });
 </script>
 
@@ -91,7 +91,7 @@ document.getElementById("loginForm").addEventListener("submit",function(event) {
 
 <script>
     $("#toggle").click(function() {
-        let pwd = $("#pwd);
+        let pwd = $("#pwd");
         pwd.attr("type", pwd.attr("type") === "password" ? "text" : "password");
 });
 </script>
@@ -134,7 +134,7 @@ document.getElementById("loginForm").addEventListener("submit",function(event) {
 <script>
     $("#formCheck").submit(function(e){
         e.preventDefault();
-        if $("#name").val() === ""){
+        if ($("#name").val() === ""){
         $("#name").addClass("error");
     } else {
         $("#name").removeClass("error");
@@ -142,3 +142,4 @@ document.getElementById("loginForm").addEventListener("submit",function(event) {
         }
     });
 </script>
+
