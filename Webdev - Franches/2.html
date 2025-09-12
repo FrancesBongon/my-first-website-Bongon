@@ -72,3 +72,16 @@ document.getElementById("loginForm").addEventListener("submit",function(event) {
         pwd.type = pwd.type === "password" ? "text" : "password";
     }
 </script>
+
+<form id="myForm">
+    <input type="text" required>
+    <button type="submit">Submit</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $("#myForm").submit(function(event) {
+        event.preventDefault();
+        alert("Form submitted with jQuery!);
+});
+</script>
