@@ -71,3 +71,61 @@ input {
 border: 2px solid blue; 
 }
 
+textarea { 
+width: 300px; 
+height: 100px; 
+}
+
+audio { 
+width: 250px; 
+}
+
+video { 
+border: 5px solid black; 
+}
+
+#main-title { 
+color: darkred; 
+font-size: 30px; 
+}
+
+#intro-text { 
+font-style: italic; 
+}
+
+#student-table { 
+border-collapse: collapse; 
+} 
+
+#profile-pic { 
+border-radius: 50%; 
+}
+
+#submit-btn { 
+background-color: orange; 
+padding: 10px; 
+}
+
+#container { 
+margin: 20px; 
+padding: 20px; 
+background-color: #eee; 
+}
+
+#email-field { 
+border: 1px solid red; 
+}
+
+#home-link { 
+color: purple; 
+}
+
+#login-form { 
+background: #f9f9f9; 
+padding: 15px; 
+}
+
+#footer-text { 
+text-align: right; 
+}
+
