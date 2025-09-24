@@ -27,3 +27,47 @@ color: red;
 text-decoration: none; 
 }
 
+ul { 
+list-style-type: square; 
+}
+
+ol { 
+list-style-type: upper-roman; 
+}
+
+li { 
+margin: 5px; 
+}
+
+table { 
+border: 1px solid black; 
+}
+
+th { 
+background-color: lightblue; 
+}
+
+td { 
+padding: 10px; 
+}
+
+img { 
+width: 200px;
+border-radius: 10px; 
+} 
+
+button { 
+background-color: green; 
+color: white; 
+padding: 8px; 
+}
+
+form { 
+border: 1px solid gray; 
+padding: 15px; 
+}
+
+input { 
+border: 2px solid blue; 
+}
+
