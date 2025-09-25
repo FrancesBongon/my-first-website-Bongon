@@ -151,7 +151,7 @@
         padding: 50px;
         text-align: center;
                 }
-        av {
+        nav {
         display: flex;
         justify-content: space-between;
         background: #333;
@@ -161,6 +161,28 @@
             color: white;
             margin: 0 10px;
             text-decoration: none;
+            }
+        .pricing {
+            display: flex; 
+            justify-content: center;
+            }
+        .plan { 
+            border: 1px solid #ccc; 
+            padding: 20px; 
+            margin: 10px; 
+            width: 200px; 
+            text-align: center;
+        }
+        .sidebar {
+            width: 200px;
+            float: left;
+            background: lightgray;
+            height: 100vh;
+            padding: 20px;
+            }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
             }
         </style>
         </head>
@@ -237,5 +259,12 @@
                 <a href="#">About</a>
             </div>
         </nav>
+        <div class="pricing">
+        <div class="plan">Basic</div>
+        <div class="plan">Standard</div>
+        <div class="plan">Premium</div>
+        </div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main Content</div>
     </body>
 </html>
