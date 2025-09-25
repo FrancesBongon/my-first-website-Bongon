@@ -128,72 +128,96 @@
             box-sizing: border-box;
                 }
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
                 }
         .gallery img {
-            width: 30%;
-            margin: 1%;
+        width: 30%;
+        margin: 1%;
+                }
+        .card {
+        width: 250px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+                }
+        .card img {
+        width: 100px;
+        border-radius: 50%;
+                }
+        .banner {
+        background: lightblue;
+        padding: 50px;
+        text-align: center;
                 }
         </style>
         </head>
     <body>
-        <body>
+        <header>
+            <h1>My Website</h1>
+        </header>
+            <div class="left">Left Content</div>
+            <div class="right">Right Content</div>
+            <img src="https://via.placeholder.com/600x300" alt="Sample">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </body>
-<header>
-    <h1>My Website</h1>
-</header>
-            <header>Sticky Header</header>
-            <p>Scroll down...</p>
-        <div class="row">
-            <div class="col">Column 1</div>
-            <div class="col">Column 2</div>
-            <div class="col">Column 3</div>
-        </div>
-        <div class="gallery"></div>
-        <img src="https://via.placeholder.com/150">
-        <img src="https://via.placeholder.com/150">
-        <img src="https://via.placeholder.com/150">
-            <div style="height:1500px;"></div>
-        <div class="left">Left Content</div>
-        <div class="right">Right Content</div>
-        <img src="https://via.placeholder.com/600x300" alt="Sample">
-        <div class="col">Column 1</div>
-        <div class="col">Column 2</div>
-        <div class="col">Column 3</div>
-        <button class="btn">Click Me</button>
-         <body>
+            <button class="btn">Click Me</button>
             <form>
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
                 <textarea placeholder="Message"></textarea>
                 <button>Submit</button>
             </form>
-        </body>
-        <div class="card">
-        <h3>Card Title</h3>
-        <p>Some card content.</p>
-        </div>
-        <div class="center">
-        <h1>Centered Text</h1>
-        </div>
-        <div class="dropdown">
-        <button>Menu</button>
-        <div class="dropdown-content">
-            <p>Option 1</p>
-            <p>Option 2</p>
-    <p>Page content here...</p>
-    <footer>Fixed Footer</footer>
-    </div>
-        <button
-        onclick="document.getElementById('myModal').classList.add('show')">Open Modal</button>
+                <div class="card">
+                <h3>Card Title</h3>
+                <p>Some card content.</p>
+            </div>
+            <button onclick="document.getElementById('myModal').classList.add('show')">Open Modal</button>
         <div id="myModal" class="modal">
             <p>This is a modal!</p>
+        </div>
+            <div class="row">
+                <div class="col">Column 1</div>
+                <div class="col">Column 2</div>
+                <div class="col">Column 3</div>
+            </div>
+            <div class="dropdown">
+                <button>Menu</button>
+                <div class="dropdown-content">
+                    <p>Option 1</p>
+                    <p>Option 2</p>
+                </div>
+            </div>
+            <div class="center">
+                <h1>Centered Text</h1>
+            </div>
+            <header>Sticky Header</header>
+                <p>Scroll down...</p>
+            <div style="height:1500px;"></div>
+            <p>Page content here...</p>
+            <footer>Fixed Footer</footer>
+        <div class="row">
+            <div class="col">Column 1</div>
+            <div class="col">Column 2</div>
+            <div class="col">Column 3</div>
+        </div>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/150">
+            <img src="https://via.placeholder.com/150">
+            <img src="https://via.placeholder.com/150">
+        </div>
+            <div class="card">
+            <img src="https://via.placeholder.com/100">
+            <h3>John Doe</h3>
+            <p>Web Developer</p>
+        </div>
+        <div class="banner">
+            <h1>Welcome to My Website</h1>
+            <p>This is a hero banner</p>
         </div>
     </body>
 </html>
