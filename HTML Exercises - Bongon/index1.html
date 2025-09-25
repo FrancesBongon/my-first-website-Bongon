@@ -85,6 +85,20 @@
             padding: 20px;
             background: lightblue;
             }
+      .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            border: 1px solid #ccc;
+            min-width: 120px;
+            }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            }
   </style>
 </head>
 <body>
@@ -114,6 +128,7 @@
         <h3>Card Title</h3>
         <p>Some card content.</p>
         </div>
+</body>
   <button
         onclick="document.getElementById('myModal').classList.add('show')">Open Modal</button>
         <div id="myModal" class="modal">
@@ -129,5 +144,11 @@
             <div class="col">Column 2</div>
             <div class="col">Column 3</div>
         </div>
-</body>
+    <div class="dropdown">
+    <button>Menu</button>
+    <div class="dropdown-content">
+    <p>Option 1</p>
+    <p>Option 2</p>
+  </div>
+</div>
 </html>
