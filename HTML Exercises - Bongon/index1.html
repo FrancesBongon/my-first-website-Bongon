@@ -50,10 +50,31 @@
         width: 300px;
         margin: 20px auto;
         }
-      input, textarea {
+    input, textarea {
         width: 100%;
         margin-bottom: 10px;
         padding: 8px;
+        }
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        width: 250px;
+        margin: 10px auto;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+    modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border: 1px solid black;
+        }
+    .modal.show {
+        display: block;
         }
   </style>
 </head>
@@ -83,6 +104,16 @@
         <div class="card">
         <h3>Card Title</h3>
         <p>Some card content.</p>
+        </div>
+  <button
+        onclick="document.getElementById('myModal').classList.add('show')">Open Modal</button>
+        <div id="myModal" class="modal">
+          <p>This is a modal!</p>
+        </div>
+        <button
+        onclick="document.getElementById('myModal').classList.add('show')">Open Modal</button>
+        <div id="myModal" class="modal">
+            <p>This is a modal!</p>
         </div>
 </body>
 </html>
