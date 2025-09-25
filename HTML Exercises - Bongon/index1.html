@@ -76,6 +76,15 @@
     .modal.show {
         display: block;
         }
+      .row {
+            display: flex;
+            }
+        .col {
+            flex: 1;
+            margin: 5px;
+            padding: 20px;
+            background: lightblue;
+            }
   </style>
 </head>
 <body>
@@ -114,6 +123,11 @@
         onclick="document.getElementById('myModal').classList.add('show')">Open Modal</button>
         <div id="myModal" class="modal">
             <p>This is a modal!</p>
+        </div>
+            <div class="row">
+            <div class="col">Column 1</div>
+            <div class="col">Column 2</div>
+            <div class="col">Column 3</div>
         </div>
 </body>
 </html>
