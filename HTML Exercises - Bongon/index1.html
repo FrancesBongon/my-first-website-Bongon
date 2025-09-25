@@ -121,7 +121,12 @@
             text-align: center;
             padding: 10px;
                 }
-        
+        .col {
+            float: left;
+            width: 33.3%;
+            padding: 20px;
+            box-sizing: border-box;
+                }
         </style>
         </head>
     <body>
@@ -137,10 +142,18 @@
 </header>
             <header>Sticky Header</header>
             <p>Scroll down...</p>
+        <div class="row">
+            <div class="col">Column 1</div>
+            <div class="col">Column 2</div>
+            <div class="col">Column 3</div>
+        </div>
             <div style="height:1500px;"></div>
         <div class="left">Left Content</div>
         <div class="right">Right Content</div>
         <img src="https://via.placeholder.com/600x300" alt="Sample">
+        <div class="col">Column 1</div>
+        <div class="col">Column 2</div>
+        <div class="col">Column 3</div>
         <button class="btn">Click Me</button>
          <body>
             <form>
@@ -153,7 +166,8 @@
         <div class="card">
         <h3>Card Title</h3>
         <p>Some card content.</p>
-        </div><div class="center">
+        </div>
+        <div class="center">
         <h1>Centered Text</h1>
         </div>
         <div class="dropdown">
@@ -168,11 +182,6 @@
         onclick="document.getElementById('myModal').classList.add('show')">Open Modal</button>
         <div id="myModal" class="modal">
             <p>This is a modal!</p>
-        </div>
-            <div class="row">
-            <div class="col">Column 1</div>
-            <div class="col">Column 2</div>
-            <div class="col">Column 3</div>
         </div>
     </body>
 </html>
