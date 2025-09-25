@@ -112,6 +112,16 @@
             background: lightblue;
             padding: 15px;
             }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: gray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+                }
+        
         </style>
         </head>
     <body>
@@ -143,12 +153,17 @@
         <div class="card">
         <h3>Card Title</h3>
         <p>Some card content.</p>
-        </div>
-    </body>
-        </div>
-        <div class="center">
+        </div><div class="center">
         <h1>Centered Text</h1>
         </div>
+        <div class="dropdown">
+        <button>Menu</button>
+        <div class="dropdown-content">
+            <p>Option 1</p>
+            <p>Option 2</p>
+    <p>Page content here...</p>
+    <footer>Fixed Footer</footer>
+    </div>
         <button
         onclick="document.getElementById('myModal').classList.add('show')">Open Modal</button>
         <div id="myModal" class="modal">
@@ -158,10 +173,6 @@
             <div class="col">Column 1</div>
             <div class="col">Column 2</div>
             <div class="col">Column 3</div>
-        </div><div class="dropdown">
-        <button>Menu</button>
-        <div class="dropdown-content">
-            <p>Option 1</p>
-            <p>Option 2</p>
-    </div>
+        </div>
+    </body>
 </html>
