@@ -11,4 +11,27 @@ $(document).ready(function(){
     $("#demo").toggle();
     });
     $("#demo").addClass("highlight");
+    $("#demo").removeClass("highlight");
+    $("#btn").click(function(){
+    $("#demo").toggleClass("highlight");
+    });
+    let val = $("#name").val();
+    console.log(val);
+    $("#name").val("John Doe");
+    $("#demo").append(" Extra text!");
+    $("#demo").prepend("Start ");
+    $("#box").fadeOut();
+    $("#box").fadeIn();
+    $("#panel").slideUp();
+    $("#panel").slideDown();
+    $("#demo").css({
+    "color": "white",
+    "background-color": "black"
+    });
+    $("#demo").mouseover(function(){
+    $(this).css("color", "red");
+    });
+    $("#demo").click(function(){
+    $(this).text("You clicked me!");
+    });
 });
